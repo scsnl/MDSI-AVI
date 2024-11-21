@@ -1,0 +1,14 @@
+defaults:
+- hp_estimator_config: hp_example
+# - override hp_estimator_config/fkl_dataset_config/single_model_config: example_single_uniform_bm
+
+single_guide_type: "MF"
+initialize_latent: "Wiener"  # Wiener, null
+initialize_coupling: "eye"  # least-squares, eye, null
+single_guide_hyperparameters_config: {}
+training:
+  lr: 0.001
+  betas: [0.95,0.999]
+  num_particles: 8
+  max_plate_nesting: 0
+  epochs: 5000

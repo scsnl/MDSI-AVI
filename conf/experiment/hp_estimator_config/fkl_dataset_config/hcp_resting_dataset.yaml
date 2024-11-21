@@ -1,0 +1,6 @@
+defaults:
+  - single_model_config: hcp_resting_single_bm
+
+dataset_size: 30000
+Y_max_abs_val: 100.0
+seed: 1234

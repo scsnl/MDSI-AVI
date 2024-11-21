@@ -1,0 +1,25 @@
+n_regions: 64
+n_timesteps: 1200
+n_conditions: 1
+
+coupling_matrix_prior_config:
+  type: "Laplace"
+  laplace_self_coupling_loc: 0.2
+  laplace_self_coupling_scale: 0.05
+  laplace_coupling_scale: 0.05
+
+latent_scale_prior_config:
+  normal_loc: 1.0
+  normal_scale: 0.1
+
+bold_scale_prior_config:
+  normal_loc: 1.0
+  normal_scale: 0.1
+
+hrf_angle_prior_config:
+  uniform_low: -0.785
+  uniform_high: 0.785
+
+hrf_config:
+  time_repetition: 0.72
+  time_duration_kernel: 30.0

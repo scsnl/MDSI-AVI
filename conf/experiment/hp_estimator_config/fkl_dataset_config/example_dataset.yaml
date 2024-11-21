@@ -1,0 +1,6 @@
+defaults:
+  - single_model_config: example_single_bm
+
+dataset_size: 5000
+Y_max_abs_val: 100.0
+seed: 1234

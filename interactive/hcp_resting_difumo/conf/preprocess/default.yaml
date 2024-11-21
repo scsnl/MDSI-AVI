@@ -1,0 +1,14 @@
+subject: 100206
+session: "REST1_LR"
+difumo_dimension: 64
+hydra:
+  sweep:
+    subdir: ${subject}_${session}_DiFuMo${difumo_dimension}
+remove_confounds: True
+clean_img_kwargs:
+  detrend: True
+  low_pass: 0.1
+  high_pass: 0.01
+  t_r: 0.74
+smooth_img_kwargs:
+  fwhm: 4

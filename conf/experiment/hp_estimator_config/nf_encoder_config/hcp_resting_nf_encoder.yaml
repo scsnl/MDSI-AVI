@@ -1,0 +1,9 @@
+nf_config:
+  n_blocks: 3
+  hidden_dims: [128, 128]
+
+encoder_config:
+  conv1d_channel_kernel_strides: [[8, 5, 2], [16, 3, 2], [32, 3, 2], [64, 3, 2]]
+  avgpool1d_kernels: [2, 2, 2, 2]
+  flat_size: 256
+context_dim: 128
